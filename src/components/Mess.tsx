@@ -11,13 +11,13 @@ export default function Mess() {
         </FadeIn>
         <FadeIn className="mess__images" delay={1}>
           <img
-            src="/images/inside cold pool.jpg"
-            alt="The empty cold pool before restoration"
+            src="/images/before-algae-pool.jpg"
+            alt="The pool overrun with algae before restoration"
             loading="lazy"
           />
           <img
-            src="/images/entrance.jpg"
-            alt="The entrance of the property before restoration"
+            src="/images/inside cold pool.jpg"
+            alt="The empty cold pool before restoration"
             loading="lazy"
           />
         </FadeIn>

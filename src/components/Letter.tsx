@@ -169,7 +169,7 @@ export default function Letter() {
           </FadeIn>
           <FadeIn className="letter__portrait" delay={1} as="figure">
             <img
-              src="/images/outside pool steam.jpg"
+              src="/images/dennis-michelle.jpg"
               alt="Dennis and Michelle Simpson at Sleeping Buffalo"
               loading="lazy"
             />

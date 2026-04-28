@@ -3,7 +3,11 @@ import FadeIn from './FadeIn'
 export default function Management() {
   return (
     <section className="management">
-      <div className="management__bg" role="presentation" />
+      <div
+        className="management__bg"
+        role="presentation"
+        style={{ backgroundImage: "url('/images/dennis-fishing.jpg')" }}
+      />
       <div className="management__overlay" />
       <div className="container">
         <div className="management__content">
