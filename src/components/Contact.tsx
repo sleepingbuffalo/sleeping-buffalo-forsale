@@ -9,12 +9,16 @@ export default function Contact() {
       <div className="contact__bg" role="presentation" />
       <div className="contact__inner">
         <FadeIn>
-          <span className="eyebrow">Ready to Talk</span>
-          <h2>The Next Chapter Starts Here</h2>
+          <span className="eyebrow">Contact</span>
+          <h2>This Place Is Ready for You</h2>
           <hr className="gold-rule center long" />
           <p className="contact__intro">
-            Reach out to Carly Bishop at Northwest Realty and Auction. She
-            knows this property and she will take good care of you.
+            The story above is not a pitch. It is the honest account of what
+            this place has been and what it has become. If you felt something
+            reading it, that feeling is worth a conversation. Carly Bishop has
+            spent real time with this property and with this family. She will
+            answer your questions honestly, arrange a visit, and take care of
+            you throughout the process.
           </p>
         </FadeIn>
         <FadeIn className="contact__card" delay={1}>
@@ -34,8 +38,12 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            View the Full Listing
+            View the Official Listing
           </a>
+        </FadeIn>
+        <FadeIn className="contact__price" delay={3}>
+          <span className="contact__price-label">Asking Price</span>
+          <span className="contact__price-value">$9.7 Million</span>
         </FadeIn>
       </div>
     </section>

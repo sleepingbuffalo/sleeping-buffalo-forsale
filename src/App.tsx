@@ -1,10 +1,10 @@
 import Hero from './components/Hero'
 import Origin from './components/Origin'
-import Community from './components/Community'
-import Restoration from './components/Restoration'
-import Numbers from './components/Numbers'
+import Property from './components/Property'
+import InvestmentCase from './components/InvestmentCase'
+import FoundAndBuilt from './components/FoundAndBuilt'
 import Letter from './components/Letter'
-import Management from './components/Management'
+import Transition from './components/Transition'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -13,11 +13,11 @@ export default function App() {
     <>
       <Hero />
       <Origin />
-      <Community />
-      <Restoration />
-      <Numbers />
+      <Property />
+      <InvestmentCase />
+      <FoundAndBuilt />
       <Letter />
-      <Management />
+      <Transition />
       <Contact />
       <Footer />
     </>

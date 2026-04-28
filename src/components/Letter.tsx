@@ -72,36 +72,24 @@ export default function Letter() {
                 That changed everything. I went back and looked at the old
                 books. In the 1980s, when a swim cost about a dollar, this
                 place was grossing over three million dollars a year. The
-                demand was never the question. People had just been waiting for
-                someone to give them a reason to return.
+                demand was never the question. People had just been waiting
+                for someone to give them a reason to return.
               </p>
               <p>
-                I was not slapping paint on walls anymore. We went at it with
-                everything we had.
+                We went at it with everything we had. Over the next ten years
+                we rebuilt the hot springs from the ground up, restored the
+                original stone cabins that were quarried from the same rock
+                used to build Fort Peck Dam, added an RV park, a greenhouse, a
+                saloon and steakhouse, and remodeled the outdoor pool to
+                stretch 128 feet under an open Montana sky. We drilled a new
+                artesian well 3,200 feet deep in 2021 so the mineral water
+                would flow clean and pure the way it was always meant to.
               </p>
               <p>
-                In 2014 we gutted the inside and rebuilt it from the ground up.
-                Retiled the pools. Rebuilt the hotel rooms. We ran the resort
-                on the old original well until 2021 when we drilled a brand new
-                artesian well down 3,200 feet to bring fresh mineral water up
-                the right way. We opened on Christmas Day that year and did not
-                look back.
-              </p>
-              <p>
-                In 2016 we turned our attention to the original stone cabins,
-                built back in the 1920s using the same rock quarried for the
-                Fort Peck Dam. We kept every bit of that history and brought
-                them back to life with every modern comfort we could fit
-                inside. In 2017 we built out the RV park and campground with a
-                proper bathhouse. In 2023 we built the Buffalo Saloon and 54
-                Prime Steakhouse from scratch, along with a greenhouse to grow
-                our own food right on the property. In 2024 we remodeled the
-                outdoor pool to stretch 128 feet under an open Montana sky.
-              </p>
-              <p>
-                I will never forget pulling up on Christmas morning and finding
-                Kathy Salsberry standing outside at 9am with a smile on her
-                face, waiting to come in. She has been a regular ever since.
+                We opened on Christmas Day in 2014. I will never forget
+                pulling up that morning and finding Kathy Salsberry standing
+                outside at 9am with a smile on her face, waiting to come in.
+                She has been a regular ever since.
               </p>
               <p>
                 What happened after that is hard to put into words. A woman
@@ -112,14 +100,15 @@ export default function Letter() {
                 beautiful machines from another era. A guest once brought a
                 full grown parrot into the Buffalo Saloon and that bird sat on
                 my son Christian&rsquo;s shoulder the whole night while he
-                bartended, greeting every single person who walked through the
-                door.
+                bartended, greeting every single person who walked through
+                the door.
               </p>
               <p>
                 The honest reason I am selling is simple. Michelle lives and
                 works in Scottsdale and I miss her. That is the whole story. I
                 built something I am deeply proud of and now I want to go be
-                with my wife. A man can only run in two directions for so long.
+                with my wife. A man can only run in two directions for so
+                long.
               </p>
               <p>
                 My son Christian has been by my side through all of it. He
