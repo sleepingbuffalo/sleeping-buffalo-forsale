@@ -1,7 +1,7 @@
 import Hero from './components/Hero'
 import Origin from './components/Origin'
-import Mess from './components/Mess'
-import Showcase from './components/Showcase'
+import Community from './components/Community'
+import Restoration from './components/Restoration'
 import Numbers from './components/Numbers'
 import Letter from './components/Letter'
 import Management from './components/Management'
@@ -13,8 +13,8 @@ export default function App() {
     <>
       <Hero />
       <Origin />
-      <Mess />
-      <Showcase />
+      <Community />
+      <Restoration />
       <Numbers />
       <Letter />
       <Management />
