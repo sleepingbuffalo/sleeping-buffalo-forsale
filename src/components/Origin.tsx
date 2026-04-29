@@ -34,7 +34,7 @@ export default function Origin() {
           <FadeIn className="origin__images" delay={1}>
             <figure className="origin__frame">
               <img
-                src="/images/oil%20derrick%20picture.JPG"
+                src="/images/oil-derrick.jpg"
                 alt="Historic oil derrick from the era when the springs were discovered"
                 loading="lazy"
               />
