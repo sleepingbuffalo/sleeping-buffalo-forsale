@@ -15,8 +15,8 @@ export default function FoundAndBuilt() {
             <div className="found__tag">Then</div>
             <div className="found__stack">
               <img
-                src="/images/before-algae-pool.jpg"
-                alt="The pool overrun with algae before restoration"
+                src="/images/IMG_4471.JPG"
+                alt="The shuttered pool and rusting waterslide before restoration"
                 loading="lazy"
               />
               <img

@@ -47,8 +47,8 @@ export default function InvestmentCase() {
           </FadeIn>
           <FadeIn className="invest__image" delay={1}>
             <img
-              src="/images/guests-in-pool.jpg"
-              alt="Guests soaking in the mineral pool"
+              src="/images/Aerobics%20ladies.JPG"
+              alt="Guests doing water aerobics in the outdoor mineral pool"
               loading="lazy"
             />
           </FadeIn>
