@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from 'react'
 import FadeIn from './FadeIn'
 
-type GalleryImage = { src: string; caption: string }
+type Slide = { src: string; caption: string }
 
-const galleryImages: GalleryImage[] = [
+const slides: Slide[] = [
   { src: '/images/outdoor-pool-night-lit.jpg', caption: '128 feet of open Montana sky' },
   { src: '/images/outdoor-pool-dusk.jpg', caption: 'The outdoor pool at dusk' },
   { src: '/images/outdoor-pool-steam.jpg', caption: 'Steam rising on a cold evening' },
@@ -33,37 +33,30 @@ const galleryImages: GalleryImage[] = [
 ]
 
 export default function Property() {
-  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
-  const isOpen = lightboxIndex !== null
+  const [index, setIndex] = useState(0)
 
-  const close = useCallback(() => setLightboxIndex(null), [])
-  const next = useCallback(
-    () => setLightboxIndex(i => (i === null ? null : (i + 1) % galleryImages.length)),
-    []
-  )
+  const next = useCallback(() => setIndex(i => (i + 1) % slides.length), [])
   const prev = useCallback(
-    () =>
-      setLightboxIndex(i =>
-        i === null ? null : (i - 1 + galleryImages.length) % galleryImages.length
-      ),
+    () => setIndex(i => (i - 1 + slides.length) % slides.length),
     []
   )
 
   useEffect(() => {
-    if (!isOpen) return
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') close()
-      else if (e.key === 'ArrowRight') next()
+      if (e.key === 'ArrowRight') next()
       else if (e.key === 'ArrowLeft') prev()
     }
     window.addEventListener('keydown', onKey)
-    const prevOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    return () => {
-      window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = prevOverflow
-    }
-  }, [isOpen, close, next, prev])
+    return () => window.removeEventListener('keydown', onKey)
+  }, [next, prev])
+
+  // Warm browser cache for the next slide so rapid navigation stays smooth.
+  useEffect(() => {
+    const upcoming = new Image()
+    upcoming.src = slides[(index + 1) % slides.length].src
+  }, [index])
+
+  const current = slides[index]
 
   return (
     <section className="section property" id="property">
@@ -104,28 +97,51 @@ export default function Property() {
         </FadeIn>
       </div>
 
-      <FadeIn className="property__hero">
-        <img
-          src="/images/aerial-full-property.jpg"
-          alt="Aerial view of the full Sleeping Buffalo property"
-          loading="lazy"
-        />
+      <FadeIn
+        className="carousel"
+        role="region"
+        aria-label="Property photo carousel"
+      >
+        <div className="carousel__stage">
+          <img
+            key={current.src}
+            src={current.src}
+            alt={current.caption}
+            className="carousel__image"
+          />
+        </div>
+        <button
+          type="button"
+          className="carousel__nav carousel__nav--prev"
+          onClick={prev}
+          aria-label="Previous photo"
+        >
+          &#8249;
+        </button>
+        <button
+          type="button"
+          className="carousel__nav carousel__nav--next"
+          onClick={next}
+          aria-label="Next photo"
+        >
+          &#8250;
+        </button>
       </FadeIn>
 
       <div className="container">
-        <FadeIn className="property__gallery">
-          {galleryImages.map((img, i) => (
-            <button
-              key={img.src}
-              type="button"
-              className="gallery-tile"
-              onClick={() => setLightboxIndex(i)}
-              aria-label={`View ${img.caption}`}
-            >
-              <img src={img.src} alt={img.caption} loading="lazy" />
-            </button>
-          ))}
-        </FadeIn>
+        <div className="carousel__meta">
+          <p
+            key={`cap-${index}`}
+            className="carousel__caption"
+            aria-live="polite"
+          >
+            {current.caption}
+          </p>
+          <p className="carousel__counter" aria-label={`Photo ${index + 1} of ${slides.length}`}>
+            {index + 1} <span className="carousel__counter-divider">/</span>{' '}
+            {slides.length}
+          </p>
+        </div>
 
         <FadeIn className="property__residence">
           <p>
@@ -144,58 +160,6 @@ export default function Property() {
           </p>
         </FadeIn>
       </div>
-
-      {isOpen && lightboxIndex !== null && (
-        <div
-          className="lightbox"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Photo gallery"
-          onClick={close}
-        >
-          <button
-            type="button"
-            className="lightbox__close"
-            onClick={close}
-            aria-label="Close gallery"
-          >
-            &times;
-          </button>
-          <button
-            type="button"
-            className="lightbox__nav lightbox__nav--prev"
-            onClick={e => {
-              e.stopPropagation()
-              prev()
-            }}
-            aria-label="Previous photo"
-          >
-            &#8249;
-          </button>
-          <figure className="lightbox__content" onClick={e => e.stopPropagation()}>
-            <img
-              key={lightboxIndex}
-              src={galleryImages[lightboxIndex].src}
-              alt={galleryImages[lightboxIndex].caption}
-              className="lightbox__image"
-            />
-            <figcaption key={`cap-${lightboxIndex}`} className="lightbox__caption">
-              {galleryImages[lightboxIndex].caption}
-            </figcaption>
-          </figure>
-          <button
-            type="button"
-            className="lightbox__nav lightbox__nav--next"
-            onClick={e => {
-              e.stopPropagation()
-              next()
-            }}
-            aria-label="Next photo"
-          >
-            &#8250;
-          </button>
-        </div>
-      )}
     </section>
   )
 }
