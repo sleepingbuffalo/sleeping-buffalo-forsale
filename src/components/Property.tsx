@@ -5,7 +5,6 @@ type Slide = { src: string; caption: string }
 
 const slides: Slide[] = [
   { src: '/images/outdoor-pool-night-lit.jpg', caption: '128 feet of open Montana sky' },
-  { src: '/images/outdoor-pool-dusk.jpg', caption: 'The outdoor pool at dusk' },
   { src: '/images/outdoor-pool-steam.jpg', caption: 'Steam rising on a cold evening' },
   { src: '/images/aerobics-ladies.jpg', caption: 'The community this place has built' },
   { src: '/images/indoor-pool-wide.jpg', caption: 'The indoor mineral pools' },
