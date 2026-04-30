@@ -15,7 +15,7 @@ const slides: Slide[] = [
   { src: '/images/cabin-night.jpg', caption: 'The cabins at night' },
   { src: '/images/log-cabin-interior.jpg', caption: 'Warm and built to last' },
   { src: '/images/saloon-exterior.jpg', caption: 'Inside the Buffalo Saloon' },
-  { src: '/images/buffalo saloon.jpg', caption: 'The Buffalo Saloon and 54 Prime Steakhouse' },
+  { src: '/images/buffalo-saloon.jpg', caption: 'The Buffalo Saloon and 54 Prime Steakhouse' },
   { src: '/images/saloon-dining.jpg', caption: 'Fine dining on the Hi-Line' },
   { src: '/images/saloon-seating.jpg', caption: 'A gathering place' },
   { src: '/images/suite-1.jpg', caption: 'Hotel suites' },
