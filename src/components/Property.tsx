@@ -144,12 +144,24 @@ export default function Property() {
 
         <FadeIn className="property__residence">
           <p>
-            The owner&rsquo;s residence is a 5,388 square foot custom built
-            home with radiant floor heating, a heated garage, detailed woodwork,
-            four bedrooms, three bathrooms, and a concrete encased walk in gun
-            safe. A 1,200 square foot manager&rsquo;s home with three bedrooms
-            and two bathrooms sits on the property as well. A 100 by 50 foot
-            shop provides additional storage, parking, and workspace.
+            What transfers with the sale is a complete, operational resort.
+            The aquatics facility includes seven mineral pools ranging from
+            48 to 108 degrees, a sauna, a dedicated sun tanning area, and a
+            private birthday and event space. The main resort building
+            features cedar beam construction and original rock walls.
+            Accommodations include three interior suites, three stone rock
+            cabins, and two log cabins, all fully furnished and guest-ready.
+            The Buffalo Saloon is equipped to the highest standard with state
+            of the art commercial equipment throughout. A 30 by 96 foot
+            organic regenerative greenhouse with egg-laying chickens and a
+            proper coop provides fresh food grown directly on the property.
+            The RV park offers 30 fully serviced sites with 20, 30, and 60
+            amp hookups, water, sewer, and a dual-gender bathhouse. The
+            owner&rsquo;s residence is a 5,388 square foot custom home with
+            radiant floor heating, four bedrooms, three bathrooms, and a
+            heated garage. A manager&rsquo;s home is also on the property.
+            Every piece of equipment needed to open the doors and pick up
+            exactly where we left off is included in the sale.
           </p>
           <p className="property__closer">
             To stand at the edge of the outdoor pool on a cold Montana evening,
