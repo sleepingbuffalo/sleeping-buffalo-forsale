@@ -9,7 +9,7 @@ const slides: Slide[] = [
   { src: '/images/aerobics-ladies.jpg', caption: 'The community this place has built' },
   { src: '/images/indoor-pool-dusk.jpg', caption: 'The indoor mineral pools at dusk' },
   { src: '/images/indoor-cold-pool.jpg', caption: 'The cold plunge pool' },
-  { src: '/images/outdoor-hot-tubs.jpg', caption: 'Hot tubs under the Montana sky' },
+  { src: '/images/outdoor-pool-evening.jpg', caption: 'The outdoor pool complex at dusk' },
   { src: '/images/cabin-exterior.jpg', caption: 'Stone cabins quarried from Fort Peck Dam rock' },
   { src: '/images/cabin-interior.jpg', caption: 'Every modern comfort inside' },
   { src: '/images/cabin-night.jpg', caption: 'The cabins at night' },
