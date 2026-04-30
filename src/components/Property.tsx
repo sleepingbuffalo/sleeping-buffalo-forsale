@@ -7,16 +7,15 @@ const slides: Slide[] = [
   { src: '/images/outdoor-pool-night-lit.jpg', caption: '128 feet of open Montana sky' },
   { src: '/images/outdoor-pool-steam.jpg', caption: 'Steam rising on a cold evening' },
   { src: '/images/aerobics-ladies.jpg', caption: 'The community this place has built' },
-  { src: '/images/indoor-pool-wide.jpg', caption: 'The indoor mineral pools' },
-  { src: '/images/indoor-pool-big.jpg', caption: 'Multiple temperatures, year-round' },
+  { src: '/images/indoor-pool-dusk.jpg', caption: 'The indoor mineral pools at dusk' },
+  { src: '/images/indoor-cold-pool.jpg', caption: 'The cold plunge pool' },
   { src: '/images/outdoor-hot-tubs.jpg', caption: 'Hot tubs under the Montana sky' },
   { src: '/images/cabin-exterior.jpg', caption: 'Stone cabins quarried from Fort Peck Dam rock' },
   { src: '/images/cabin-interior.jpg', caption: 'Every modern comfort inside' },
-  { src: '/images/cabin-interior-2.jpg', caption: 'Fully restored, fully equipped' },
   { src: '/images/cabin-night.jpg', caption: 'The cabins at night' },
   { src: '/images/log-cabin-interior.jpg', caption: 'Warm and built to last' },
-  { src: '/images/saloon-exterior.jpg', caption: 'The Buffalo Saloon and 54 Prime Steakhouse' },
-  { src: '/images/saloon-bar.jpg', caption: 'Built from scratch in 2023' },
+  { src: '/images/saloon-exterior.jpg', caption: 'Inside the Buffalo Saloon' },
+  { src: '/images/buffalo saloon.jpg', caption: 'The Buffalo Saloon and 54 Prime Steakhouse' },
   { src: '/images/saloon-dining.jpg', caption: 'Fine dining on the Hi-Line' },
   { src: '/images/saloon-seating.jpg', caption: 'A gathering place' },
   { src: '/images/suite-1.jpg', caption: 'Hotel suites' },
@@ -28,7 +27,6 @@ const slides: Slide[] = [
   { src: '/images/aerial-campground.jpg', caption: '32 acres along the Hi-Line' },
   { src: '/images/aerial-property.jpg', caption: 'Everything you see is included' },
   { src: '/images/entrance-sign.jpg', caption: '116 years of history behind this sign' },
-  { src: '/images/dennis-michelle.jpg', caption: 'Dennis and Michelle Simpson' },
 ]
 
 export default function Property() {
